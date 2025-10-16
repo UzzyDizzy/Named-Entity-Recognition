@@ -1,12 +1,13 @@
 #utils/visualizer.py
 import spacy
+import en_core_web_sm
 from spacy import displacy
 import subprocess
 import importlib
 
 # Ensure the model is available in the environment
 try:
-    nlp = spacy.load("en_core_web_sm")
+    nlp = en_core_web_sm.load("en_core_web_sm")
 except OSError:
     subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
     importlib.invalidate_caches()
