@@ -6,3 +6,4 @@ scikit-learn==1.7.2
 keras==3.11.3
 spacy==3.8.7
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.6.0/en_core_web_sm-3.6.0.tar.gz#egg=en_core_web_sm
+en-core-web-sm
