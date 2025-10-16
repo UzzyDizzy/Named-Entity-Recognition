@@ -2,9 +2,15 @@
 import spacy
 from spacy import displacy
 import subprocess
+import importlib
 
-# Ensure model is downloaded in deployed environment
-nlp = spacy.load("en_core_web_sm")
+# Ensure the model is available in the environment
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+    importlib.invalidate_caches()
+    nlp = spacy.load("en_core_web_sm")
 
 def visualize_entities(text):
     """Display named entities using SpaCy visualization with white text for dark theme."""
