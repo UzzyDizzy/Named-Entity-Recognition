@@ -12,7 +12,7 @@ except OSError:
 
 def visualize_entities(text):
     """Display named entities using SpaCy visualization with white text for dark theme."""
-    nlp = spacy.load('en_core_web_sm')
+    nlp = load_model()
     doc = nlp(text)
     
     # Render entities as HTML
