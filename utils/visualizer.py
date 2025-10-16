@@ -1,6 +1,6 @@
 #utils/visualizer.py
 import spacy
-import en_core_web_sm
+#import en_core_web_sm
 from spacy import displacy
 import subprocess
 import importlib
