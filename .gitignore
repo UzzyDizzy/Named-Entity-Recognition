@@ -1,0 +1,16 @@
+myenv
+.myenv
+./myenv/
+.myenv/
+
+venv
+.venv
+./venv/
+.venv/
+
+__pycache__
+.__pycache__
+.__pycache__/
+
+.utils/__pycache__/
+.utils/__pycache__
