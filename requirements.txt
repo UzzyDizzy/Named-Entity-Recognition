@@ -1,11 +1,7 @@
-# Compatible numpy version for both local and Streamlit Cloud environments
-numpy>=1.26.0,<2.4.0  
-
-# Specific versions for other dependencies
+numpy  # Explicitly pin to 1.26.3 for compatibility
 streamlit==1.50.0
 pandas==2.3.3
-# Updated thinc version to meet spacy's requirements
-thinc>=8.1.8,<8.2.0  
+thinc>=8.1.8,<8.2.0
 tensorflow==2.20.0
 scikit-learn==1.7.2
 keras==3.11.3
