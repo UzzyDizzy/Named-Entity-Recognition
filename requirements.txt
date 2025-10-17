@@ -1,4 +1,4 @@
-numpy  # Explicitly pin to 1.26.3 for compatibility
+numpy==1.26.3  # Explicitly pin to 1.26.3 for compatibility
 streamlit==1.50.0
 pandas==2.3.3
 thinc>=8.1.8,<8.2.0
